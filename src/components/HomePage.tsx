@@ -1,9 +1,8 @@
 import { ArrowRight, Sparkles, Zap, Layers } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import soundClashImg from 'figma:asset/f72325e312a920e71b791080254e4f61fa38da20.png';
-import weddingImg from 'figma:asset/a083d348fd3f6c8062c56e44479af8ebd9c8d90b.png';
-import corporateImg from 'figma:asset/818fc707455adb1fc5f7e10ecda370f2026a8c37.png';
-
+import soundClashImg from '../assets/f72325e312a920e71b791080254e4f61fa38da20.png';
+import weddingImg from '../assets/a083d348fd3f6c8062c56e44479af8ebd9c8d90b.png';
+import corporateImg from '../assets/818fc707455adb1fc5f7e10ecda370f2026a8c37.png';
 interface HomePageProps {
   onNavigate: (page: string, plan?: string) => void;
 }
