@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: 9lmnts-studio
+    plan: free
+    region: oregon
+    buildCommand: npm install && npm run build
+    startCommand: npm run preview
+    envVars:
+      - key: NODE_VERSION
+        value: 20.17.0
+    autoDeploy: true
