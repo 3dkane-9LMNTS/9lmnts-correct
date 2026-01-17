@@ -12,6 +12,7 @@ import { CRM } from "./components/CRM";
 import { EventOSDemo } from "./components/EventOSDemo";
 import { PremiumLOAService } from "./components/PremiumLOAService";
 import { LOACommandCenter } from "./components/LOACommandCenter";
+import { AIServicesPortal } from "./components/AIServicesPortal";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState("home");
@@ -57,6 +58,8 @@ export default function App() {
         return <PremiumLOAService onNavigate={handleNavigate} />;
       case "loa-command":
         return <LOACommandCenter onNavigate={handleNavigate} />;
+      case "ai-services":
+        return <AIServicesPortal onNavigate={handleNavigate} />;
       default:
         return <HomePage onNavigate={handleNavigate} />;
     }
@@ -69,6 +72,7 @@ export default function App() {
     "event-os-demo",
     "premium-loa",
     "loa-command",
+    "ai-services",
   ].includes(currentPage);
 
   return (
